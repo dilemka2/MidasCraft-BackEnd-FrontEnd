@@ -3,6 +3,7 @@ const hbs = require('hbs');
 const path = require('path');
 const nodeMailer = require('nodemailer')
 require('dotenv').config();
+const fs = require('fs');
 
 const app = express();
 app.set('view engine', 'hbs');
@@ -12,7 +13,13 @@ app.use(express.urlencoded({extended:false}))
 
 
 app.get('/', (req,res) => {
-    res.render('index')
+    fs.readFile(path.join(__dirname, 'public', 'clans.json'), 'utf-8', (err, data) => {
+        if (err) {
+            return res.status(500).send('something went wrong')
+        }
+        const clansData = JSON.parse(data)
+        res.render('index', {clans: clansData.clans})
+    })
 })
 
 app.post('/sending/email', (req,res) => {

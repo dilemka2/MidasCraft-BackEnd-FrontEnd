@@ -1,0 +1,29 @@
+{
+  "clans": [
+    {
+      "name": "Moles",
+      "description": "Mole Clan! Always ready to build and get better!",
+      "title": "Moles"
+    },
+    {
+      "name": "Midas",
+      "description": "Midas, a strong clan having two admins in its composition",
+      "title": "Midas"
+    },
+    {
+      "name": "Mortem",
+      "description": "A clan of newcomers who have already managed to prove themselves not bad",
+      "title": "Mortem"
+    },
+    {
+      "name": "Ubitya",
+      "description": "We don`t know much `bout them, but we`re sure they`re good",
+      "title": "Ubitya"
+    },
+    {
+      "name": "MaloMolis",
+      "description": "a good clan that is under Moles`s contol, but it doesn`t make them worse",
+      "title": "MaloMolis"
+    }
+
+]}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MidasCraft</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <!-- link to fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -73,37 +74,13 @@
                 </div>
 
                 <div class="clans__wrapper">
-                    <div class="clan-box">
-                        <h2>Moles</h2>
-                        <h4>Moles</h4>
-                        <p>We`re molis, it`s something more that a common clan, we`re family</p>
-                    </div>
-
-                    <div class="clan-box">
-                        <h2>Moles</h2>
-                        <h4>Moles</h4>
-                        <p>We`re molis, it`s something more that a common clan, we`re family</p>
-                    </div>
-
-
-                    <div class="clan-box">
-                        <h2>Moles</h2>
-                        <h4>Moles</h4>
-                        <p>We`re molis, it`s something more that a common clan, we`re family</p>
-                    </div>
-
-
-                    <div class="clan-box">
-                        <h2>Moles</h2>
-                        <h4>Moles</h4>
-                        <p>We`re molis, it`s something more that a common clan, we`re family</p>
-                    </div>
-
-                    <div class="clan-box">
-                        <h2>Moles</h2>
-                        <h4>Moles</h4>
-                        <p>We`re molis, it`s something more that a common clan, we`re family</p>
-                    </div>
+                     {{#each clans}} 
+                        <div class="clan-box">
+                            <h2>{{this.name}}</h2>
+                            <h4>{{this.title}}</h4>
+                            <p>{{this.description}}</p>
+                        </div>
+                    {{/each}}
                 </div>
             </section>
 

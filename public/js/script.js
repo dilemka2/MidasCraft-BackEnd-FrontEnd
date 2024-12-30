@@ -3,9 +3,10 @@
 const beSpan = document.querySelector('#beSpan');
 let ClansA = [
     ['Moles', '#5CB338'],
-    ['Morem', '#DA498D'],
+    ['Mortem', '#DA498D'],
     ['Midas', '#FB4141'],
     ['Ubitya', '#3E5879'],
+    ['MaloMolis', '#5CB338'],
 ]
 let counterW = 0;
 
@@ -70,3 +71,4 @@ liBtn.addEventListener('click', function() {
         counter = 0
     }
 })
+
